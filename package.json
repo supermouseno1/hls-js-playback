@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/clappr/hls-js-playback.git"
+    "url": "git+ssh://git@github.com/clappr/hls-js-playback.git"
   },
   "keywords": [
     "clappr",
