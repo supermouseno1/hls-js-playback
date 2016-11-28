@@ -4,7 +4,11 @@
   "description": "Clappr HLS playback based on hls.js",
   "main": "dist/hls-js-playback.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "node_modules/.bin/webpack --progress",
+    "release": "node_modules/.bin/webpack --progress -d --optimize-minimize --optimize-dedupe --output-filename hls-js-playback.js",
+    "start": "node_modules/.bin/webpack-dev-server --content-base public/ --output-public-path /latest --hot",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "watch": "node_modules/.bin/webpack --progress --watch"
   },
   "repository": {
     "type": "git",
@@ -12,7 +16,8 @@
   },
   "keywords": [
     "clappr",
-    "plugin"
+    "playback",
+    "hls"
   ],
   "author": "Clappr team",
   "license": "BSD-3-Clause",
